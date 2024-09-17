@@ -31,40 +31,15 @@
   <!-- Responsive css -->
   <link href="css/responsive.css" rel="stylesheet">
 
-  <!-- Dark mode CSS -->
-  <style>
-    body {
-      background-color: #121212;
-      color: #e0e0e0;
-    }
-
-    a, p {
-      color: #e0e0e0;
-    }
-
-    .nav-menu a {
-      color: #e0e0e0;
-    }
-
-    .header-content h1, .header-content p {
-      color: #fff;
-      text-shadow: 
-        1px 1px 0 #000, 
-        -1px -1px 0 #000, 
-        1px -1px 0 #000, 
-        -1px 1px 0 #000,
-        0 4px 8px rgba(0, 0, 0, 0.9);
-    }
-
-    #footer {
-      padding: 20px 0;
-      margin-bottom: 0;
-    }
-  </style>
-
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon 2.png">
 
+  <!-- =======================================================
+    Theme Name: Folio
+    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
 
 <body>
@@ -95,12 +70,27 @@
   <div id="header" class="home">
 
     <div class="container">
-      <div class="header-content">
-        <h1>Ben <span class="typed"></span></h1>
-        <p>tasarımcı, geliştirici, çevirmen</p>
+  <div class="header-content">
+    <h1 style="
+      color: #fff; 
+      text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000,
+        0 4px 8px rgba(0, 0, 0, 0.9);">Ben <span class="typed"></span></h1>
+    <p style="
+      color: #fff; 
+      text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000,
+        0 3px 6px rgba(0, 0, 0, 0.9);">tasarımcı, geliştirici, çevirmen</p>
+  </div>
+</div>
       </div>
     </div>
-
   </div>
   <!-- End section header -->
 
@@ -121,7 +111,7 @@
         <div class="col-lg-7">
           <div class="about-descr">
 
-            <p class="p-heading">Ben, temiz, basit ve benzersiz tasarımları seven, Düzce merkezli bir tasarımcısıyım. Ayrıca altyazı ve vikipedi makalesi oluşturmaktan keyif alıyorum.</p>
+            <p class="p-heading">Ben, temiz, basit ve benzersiz tasarımları seven, Düzce merkezli bir tasarımcısıyım. Ayrıca altyazı ve vikipedi makalesi oluşturmaktan keyif alıyorum. </p>
             <p class="separator">Anime dünyasına tutkun, her türde yeni seriler keşfetmeyi seven bir hayranım. Karakter gelişimi, hikaye derinliği ve görsel estetik benim için vazgeçilmez.</p>
 
           </div>
@@ -134,21 +124,21 @@
 
   <!-- start section footer -->
   <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-        <ul class="list-unstyled">
-          <li><a href="https://www.facebook.com/xDemirkaynak"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="http://x.com/KDxOFFICIAL"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/450px-X_logo_2023_original.svg.png" alt="X" style="width: 20px;"></a></li>
-          <li><a href="https://instagram.com/kerimdemirkaynak"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://www.tumblr.com/kerimdemirkaynak"><i class="fab fa-tumblr"></i></a></li>
-        </ul>
-      </div>
+  <div class="container">
+    <div class="socials-media text-center">
+      <ul class="list-unstyled">
+        <li><a href="https://www.facebook.com/xDemirkaynak"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="http://x.com/KDxOFFICIAL"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/450px-X_logo_2023_original.svg.png" alt="X" style="width: 20px;"></a></li>
+        <li><a href="https://instagram.com/kerimdemirkaynak"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.tumblr.com/kerimdemirkaynak"><i class="fab fa-tumblr"></i></a></li>
+      </ul>
+    </div>
 
-      <p>&copy; <span id="year"></span> Kerim Demirkaynak. Tüm hakları saklıdır.</p>
+<p>&copy; <span id="year"></span> Kerim Demirkaynak. Tüm hakları saklıdır.</p>
 
-      <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-      </script>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
     </div>
   </div>
   <!-- End section footer -->
