@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["KERİM DEMİRKAYNAK.", "TASARIMCIYIM.", "GELİŞTİRİCİYİM.", "ÇEVİRMENİM.", "VİKİPEDİSTİM"],
+      strings: ["KERİM DEMİRKAYNAK", "TASARIMCIYIM", "GELİŞTİRİCİYİM", "ÇEVİRMENİM", "VİKİPEDİSTİM"],
       typeSpeed: 100,
       loop: true,
     });
