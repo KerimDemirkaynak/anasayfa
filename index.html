@@ -26,7 +26,7 @@
       background-color: #f4f4f4;
     }
 
-    /* Navbar styling */
+    /* Navbar styling (eski haliyle) */
     #main-nav {
       background: #333;
       padding: 15px 0;
@@ -39,6 +39,7 @@
     .nav-menu {
       display: flex;
       justify-content: flex-end;
+      list-style: none;
     }
 
     .nav-menu a {
@@ -47,6 +48,12 @@
       text-decoration: none;
       font-weight: 500;
       font-size: 18px;
+    }
+
+    .responsive i {
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
     }
 
     /* Header section */
@@ -142,6 +149,8 @@
         <a href="index.html"><img src="images/logo.webp" alt="logo"></a>
       </div>
 
+      <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
       <ul class="nav-menu">
         <li><a href="#header" class="smoothScroll">Ana Sayfa</a></li>
         <li><a href="#about" class="smoothScroll">Hakkımda</a></li>
@@ -187,17 +196,13 @@
       <div class="socials-media">
         <ul>
           <li><a href="https://www.facebook.com/xDemirkaynak"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="http://x.com/KDxOFFICIAL"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="http://x.com/KDxOFFICIAL"><i class="fab fa-x-twitter"></i></a></li> <!-- X logosu -->
           <li><a href="https://instagram.com/kerimdemirkaynak"><i class="fab fa-instagram"></i></a></li>
           <li><a href="https://www.tumblr.com/kerimdemirkaynak"><i class="fab fa-tumblr"></i></a></li>
         </ul>
       </div>
 
-      <p>&copy; Kerim Demirkaynak. Tüm hakları saklıdır.</p>
-
-      <div class="credits">
-        Tasarlayan <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      <p>&copy; <span id="year"></span> Kerim Demirkaynak. Tüm hakları saklıdır.</p>
     </div>
   </div>
   <!-- End section footer -->
@@ -205,6 +210,12 @@
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Year automatically updates -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 
 </html>
